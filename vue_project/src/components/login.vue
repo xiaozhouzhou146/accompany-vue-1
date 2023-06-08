@@ -15,9 +15,17 @@
         <div class="loginVerfiy">
           <input type="text" placeholder="输入验证码" />
         </div>
-        <div class="loginVerfiy">
-          <input type="text" placeholder="输入验证码" />
-        </div>
+        <!-- <div class="loginVerfiy">
+          <el-select v-model="value4" placeholder="请选择" size="small">
+            <el-option
+              v-for="item in options"
+              :key="item.value"
+              :label="item.label"
+              :value="item.value"
+            >
+            </el-option>
+          </el-select>
+        </div> -->
         <div class="submit">
           <button>登录</button>
         </div>
@@ -29,7 +37,22 @@
 <script>
 export default {
   name: "loginView",
-};
+  data() {
+    return {
+    //   options: [
+    //     {
+    //       value: "1",
+    //       label: "病人",
+    //     },
+    //     {
+    //       value: "2",
+    //       label: "陪诊师",
+    //     },
+    //   ],
+    //   value4: "病人",
+    };
+  },
+}
 </script>
 
 <style>
@@ -85,7 +108,7 @@ body {
 }
 .loginText {
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .showImg {
   height: 100%;
@@ -100,12 +123,12 @@ input {
   height: 30px;
   outline: none;
   border: none;
-  border-bottom: solid #000 1.5px;
+  border-bottom: solid #000 1px;
   text-align: center;
 }
 .loginPhone div:nth-child(1) {
   position: absolute;
-  top: 85px;
+  top: 75px;
 }
 .btn {
   position: absolute;
@@ -115,22 +138,21 @@ input {
 
 .btn button {
   position: absolute;
-  top: 10px;
   right: 30px;
   height: 30px;
   width: 55px;
   border: none;
- background-color: white;
+  background-color: white;
   color: peru;
 }
 .submit button {
   border: none;
-  width: 210px;
-  height: 30px;
-  margin-top: 30px;
+  width: 220px;
+  height: 40px;
+  margin-top: 15px;
 }
-.loginVerfiy{
+.loginVerfiy {
   height: 60px;
-  line-height:60px;
+  line-height: 60px;
 }
 </style>

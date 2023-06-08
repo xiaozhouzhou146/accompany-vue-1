@@ -1,19 +1,28 @@
 <template>
   <div id="app">
-    <navigtion></navigtion>
-    <index></index>
+    <!-- <validate></validate> -->
+    <!-- <login></login> -->
+    <!-- <navigtion></navigtion> -->
+    <!-- <firstAid></firstAid> -->
+    <!-- <index></index> -->
+    <personalSide></personalSide>
   </div>
 </template>
 
 <script>
-import navigtion from './components/navigtion';
-import index from './components/index/index'
+import PersonalSide from './components/personal/personalSide'
+// import validate from './components/validate';
+// import login from './components/login';
+// import navigtion from './components/navigtion';
+// import firstAid from './components/firstAid';
+// import index from './components/index'
 export default {
   name: "App",
-  components: { navigtion,index },
+  components: {PersonalSide },
 };
 
 </script>
 
 <style>
+
 </style>

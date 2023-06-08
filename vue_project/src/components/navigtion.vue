@@ -13,23 +13,22 @@
       <el-menu-item index="2">首页</el-menu-item>
       <el-submenu index="3">
         <template slot="title">陪诊服务</template>
-        <el-menu-item index="3-1">选项1</el-menu-item>
-        <el-menu-item index="3-2">选项2</el-menu-item>
-        <el-menu-item index="3-3">选项3</el-menu-item>
+        <el-menu-item index="3-1">无忧陪诊</el-menu-item>
+        <el-menu-item index="3-2">全程陪诊</el-menu-item>
       </el-submenu>
       <el-submenu index="4">
         <template slot="title">住院陪诊</template>
-        <el-menu-item index="4-1">选项1</el-menu-item>
-        <el-menu-item index="4-2">选项2</el-menu-item>
-        <el-menu-item index="4-3">选项3</el-menu-item>
+        <el-menu-item index="4-1">输液陪诊</el-menu-item>
+        <el-menu-item index="4-2">住院护理</el-menu-item>
       </el-submenu>
-      <el-menu-item index="5">代办买药</el-menu-item>
-      <el-menu-item index="6">急救小知识</el-menu-item>
+      <el-menu-item index="5">提前约号</el-menu-item>
+      <el-menu-item index="6">代办买药</el-menu-item>
+      <el-menu-item index="7">急救小知识</el-menu-item>
     </el-menu>
     <div class="pos">
       <div class="search"><input type="text" placeholder="Ctrl+K" /></div>
       
-      <div class="icon"><img src="../assets/tx.jpg" alt=""></div>
+      <div class="icon"><img src="../assets/tx.jpg"></div>
     </div>
   </div>
 </template>
@@ -58,7 +57,7 @@ export default {
   margin-right:150px ;
   position: absolute;
   top: 20px;
-  right: 50px;
+  right: 0px;
   float: right;
 }
 .search input {
