@@ -2,7 +2,7 @@
   <div id="app">
     <!-- <validate></validate> -->
     <!-- <login></login> -->
-    <!-- <navigtion></navigtion> -->
+    <navigtion></navigtion>
     <!-- <firstAid></firstAid> -->
     <!-- <index></index> -->
     <personalSide></personalSide>
@@ -13,12 +13,12 @@
 import PersonalSide from './components/personal/personalSide'
 // import validate from './components/validate';
 // import login from './components/login';
-// import navigtion from './components/navigtion';
+import navigtion from './components/navigtion';
 // import firstAid from './components/firstAid';
 // import index from './components/index'
 export default {
   name: "App",
-  components: {PersonalSide },
+  components: {PersonalSide,navigtion },
 };
 
 </script>
